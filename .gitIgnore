@@ -1,0 +1,23 @@
+# Node.js
+node_modules/
+dist/
+.env
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# TypeScript
+*.tsbuildinfo
+
+# IDEs
+.vscode/
+.idea/
+
+# Output de pruebas
+coverage/

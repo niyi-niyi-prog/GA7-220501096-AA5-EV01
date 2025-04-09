@@ -8,8 +8,8 @@ export const authenticateUser = async (username: string, password: string) => {
   //realiza conexion al models
   const userRepository = AppDataSource.getRepository(User)
   //consulta el usuario en la base de datos
-  const user =  await userRepository.findOne({
-    where: {username}
+  const user = await userRepository.findOne({
+    where: { username }
   })
 
   //valida que el usuario no exista
@@ -32,5 +32,4 @@ export const authenticateUser = async (username: string, password: string) => {
   )
 
   return { token }
-  
 }

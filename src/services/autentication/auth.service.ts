@@ -1,7 +1,8 @@
-import { User } from '../models/user.entity'
+
 import bcrypt from 'bcrypt'
-import { AppDataSource } from '../database'
 import jwt from 'jsonwebtoken'
+import { AppDataSource } from '../../database'
+import { User } from '../../models/user.entity'
 
 
 export const authenticateUser = async (username: string, password: string) => {
